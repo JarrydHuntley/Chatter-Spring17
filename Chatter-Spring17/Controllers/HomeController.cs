@@ -17,15 +17,23 @@ namespace Chatter_Spring17.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "This is where you can find more info! :)";
+            ViewBag.Message = "This is where you can learn about this company";
+            int total = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                total += i;
+            }
+
             double totalNumberCalculated = 0;
             do
             {
                 totalNumberCalculated += 2.7;
             }
-            while (totalNumberCalculated< 10.0);
+            while (totalNumberCalculated < 10.0);
 
             ViewBag.TotalNumberCalculated = totalNumberCalculated;
+
+            ViewBag.TotalNumber = total;
 
             return View();
         }
