@@ -17,7 +17,15 @@ namespace Chatter_Spring17.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            double totalNumberCalculated = 0;
+            ViewBag.Message = "This is where you can find more info! :)";
+            do
+            {
+                totalNumberCalculated += 2.7;
+            }
+            while (totalNumberCalculated< 10.0);
+
+            ViewBag.TotalNumberCalculated = totalNumberCalculated;
 
             return View();
         }
