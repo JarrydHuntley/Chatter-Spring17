@@ -17,8 +17,13 @@ namespace Chatter_Spring17.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
+            ViewBag.Message = "This is where you can learn about this company";
+            int total = 0;
+            for (int i = 0; i < 10; i++)
+            {
+                total += i;
+            }
+            ViewBag.TotalNumber = total;
             return View();
         }
 
