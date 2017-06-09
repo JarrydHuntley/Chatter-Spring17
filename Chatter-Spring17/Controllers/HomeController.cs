@@ -6,8 +6,10 @@ using System.Web.Mvc;
 
 namespace Chatter_Spring17.Controllers
 {
+    [RequireHttps]
     public class HomeController : Controller
     {
+
         public ActionResult Index()
         {
             return View();
